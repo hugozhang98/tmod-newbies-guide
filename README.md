@@ -36,6 +36,8 @@
 - [第 10 章：多人联机](#chapter-10)
 - [第 11 章：调试](#chapter-11)
 - [第 12 章：从 ExampleMod、API 与原版代码学习](#chapter-12)
+  - [专题：ExampleMod 1.4.5 源码导读](docs/examplemod-1.4.5-source-guide.md)
+  - [索引：ExampleMod 逐目录、逐类与主要方法](docs/examplemod-1.4.5-class-index.md)
 - [第 13 章：发布与维护](#chapter-13)
 - [第 14 章：常用专题支线](#chapter-14)
 - [第 15 章：高级主题](#chapter-15)
@@ -1539,6 +1541,8 @@ float fixedRatio = count / 10f;
 ## 第 12 章：怎样从 ExampleMod、API 与原版代码学习
 
 官方 Wiki 真正希望新手获得的能力，不是把教程代码背下来，而是能从“相似的原版行为”反向找到 Hook 和实现。
+
+如果你希望系统地读完整个项目，而不只是按关键词找单个示例，请先读新增的 [ExampleMod 1.4.5 中文源码导读](docs/examplemod-1.4.5-source-guide.md)，再用[逐目录、逐类与主要方法索引](docs/examplemod-1.4.5-class-index.md)定位源码。前者按“构建 → 自动加载 → 静态定义 → 实例与运行时 → 存档/网络 → 卸载”梳理主线，并串起枪械、永久属性、生态、Boss、自定义资源五条跨模块功能链；后者覆盖本地快照的全部 559 个 C# 文件，明确区分 447 个当前文件与 112 个未参与构建的 `Old/` 历史文件。
 
 ### 12.1 查询顺序
 
